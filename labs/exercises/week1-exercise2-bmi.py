@@ -1,4 +1,4 @@
-# Sept 2024
+# Sept 2024 
 # Exercise 2: BMI calculator
 # Write a Python script that calculates the body-mass index. 
 
