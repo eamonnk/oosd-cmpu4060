@@ -17,8 +17,6 @@ height = int(input("Please enter your height (cm): "))
 # Resultant value is a float. We round that to two decimal places using the round function for more user friendly value. 
 # Assign that value to the variable "bmi"
 bmi = str(round(weight/((height/100)**2), 2))
-print(bmi)
-print(type(bmi))
 
-# printing
-print(name.upper() + ":" + "Your Body Mass Index (bmi) is" + " " + str(bmi))
+# printing name variable and calculated bmi value with template string converting the name variable to upper case
+print("Thank You" +  " " + name.upper() + ":" + "Your Body Mass Index (bmi) is" + " " + str(bmi))
