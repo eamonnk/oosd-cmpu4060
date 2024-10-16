@@ -1,0 +1,204 @@
+00:00:24 Niall Beagan: 
+      Hi
+    
+00:00:27 Sean Connolly: 
+      Hi all
+    
+00:00:30 Zsuzsa OSullivan: 
+      Good evening
+    
+00:00:40 Eve O'Reilly: 
+      Hi all
+    
+00:01:01 Li Vivienne: 
+      Good evening all
+    
+00:01:05 Sarunas Navickas: 
+      Hello hello
+    
+00:01:24 Guilherme Angeli: 
+      Hi all
+    
+00:01:25 Alex Patoka: 
+      Good evening
+    
+00:02:18 Sarunas Navickas: 
+      If you could go through lab ex 3
+    
+00:03:35 Sarunas Navickas: 
+      Yes please
+    
+00:03:38 Jamie Shortt: 
+      Should we expect to get assessment grades every couple of weeks?
+    
+00:03:57 Jamie Shortt: 
+      Thanks
+    
+00:07:50 Rafael Teixeira Dos Santos Rodrigues: 
+      Hi everyone
+    
+00:22:24 Sarunas Navickas: 
+      I did this first and I watched the video. But didnt understand completely. As index'ing found for strings and not the lists.
+    
+00:23:20 Sarunas Navickas: 
+      got it
+    
+00:31:21 Sarunas Navickas: 
+      thank you
+    
+00:40:31 Sarunas Navickas: 
+      str
+    
+00:41:53 Sarunas Navickas: 
+      perfect
+    
+00:42:09 Sean Connolly: 
+      erroer
+    
+00:42:14 Sean Connolly: 
+      no colon?
+    
+00:42:31 Lisa Rebello: 
+      Its true
+    
+00:42:42 Lisa Rebello: 
+      It's true?
+    
+00:43:15 Sarunas Navickas: 
+      True
+    
+00:45:07 Sarunas Navickas: 
+      y is not defined
+    
+00:52:45 Jamie Shortt: 
+      indent
+    
+00:53:04 Andra Lupea: 
+      there's a scenario missing
+    
+00:53:11 Richard Browne: 
+      The case where they answer n and are over 17
+    
+00:53:15 Alex Patoka: 
+      n is missing
+    
+00:53:28 Niall Beagan: 
+      Elif missing?
+    
+00:53:30 Alex Patoka: 
+      n is undefined
+    
+00:53:57 Alex Patoka: 
+      yes :)
+    
+01:01:13 Alex Patoka: 
+      if x != 23:
+    
+01:01:21 Alex Patoka: 
+      instead if x != 23:<>
+    
+01:01:22 Andra Lupea: 
+      The example solution links from the previous exercises are not working, I get a File not found, not sure if it work for anyone else?
+    
+01:01:42 Sarunas Navickas: 
+      error 404 for me as well
+    
+01:01:51 Alex Patoka: 
+      instead of if x <> 23:
+    
+01:02:10 Sarunas Navickas: 
+      what was the mistake in CS7?
+    
+01:02:41 Alex Patoka: 
+      I am talking about example with lucky number :)
+    
+01:03:18 Sean Connolly: 
+      Sarunas, the mistake in cs7 was the entering "n" didnt return anything
+    
+01:03:28 Sarunas Navickas: 
+      oh ok thank you)
+    
+01:03:30 Alex Patoka: 
+      I have file not found as well
+    
+01:04:19 Sarunas Navickas: 
+      same for all
+    
+01:04:23 Sarunas Navickas: 
+      broken link
+    
+01:04:48 Niall Beagan: 
+      me too
+    
+01:05:06 Sarunas Navickas: 
+      yes
+    
+01:05:09 Sarunas Navickas: 
+      yes
+    
+01:05:21 Sarunas Navickas: 
+      :)))
+    
+01:11:05 Sarunas Navickas: 
+      no else?
+    
+01:11:07 Niall Beagan: 
+      it's labelled as an int
+    
+01:11:15 Niall Beagan: 
+      it should be a sting
+    
+01:11:16 Sarunas Navickas: 
+      because integer
+    
+01:11:41 Sarunas Navickas: 
+      else still missing
+    
+01:11:55 Sarunas Navickas: 
+      oh ok
+    
+01:11:57 Sarunas Navickas: 
+      :)
+    
+01:25:12 Sarunas Navickas: 
+      Harry Potter
+    
+01:25:15 Sarunas Navickas: 
+      easy
+    
+01:25:23 Sarunas Navickas: 
+      I dont know
+    
+01:34:23 Sarunas Navickas: 
+      Got it
+    
+01:35:34 Alex Patoka: 
+      coffee time :)
+    
+01:36:39 Sarunas Navickas: 
+      Ok
+    
+01:36:41 Sarunas Navickas: 
+      thank you.
+    
+01:36:42 Alex Patoka: 
+      Ok
+    
+01:36:44 Sarunas Navickas: 
+      when?
+    
+01:36:47 Lisa Rebello: 
+      OK
+    
+01:36:52 Sarunas Navickas: 
+      cool
+    
+01:36:53 Sarunas Navickas: 
+      thanks
+    
+01:36:54 Alex Patoka: 
+      Than you
+    
+01:36:56 Li Vivienne: 
+      bye
+    
