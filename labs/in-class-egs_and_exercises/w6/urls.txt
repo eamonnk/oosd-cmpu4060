@@ -1,0 +1,10 @@
+Inheritance syntax in Python>>
+
+https://jelena-vk-itt.github.io/jvk-tudt-notes/ooswd/res/files/python/classes/inheritance.py
+https://jelena-vk-itt.github.io/jvk-tudt-notes/ooswd/res/files/python/classes/team_reorg.zip
+
+Method overriding>>
+https://jelena-vk-itt.github.io/jvk-tudt-notes/ooswd/res/files/python/classes/pets.zip
+
+Car example from class
+https://jelena-vk-itt.github.io/jvk-tudt-notes/ooswd/res/files/python/classes/car_with_owner.zip
