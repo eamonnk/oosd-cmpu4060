@@ -19,6 +19,7 @@ foodprods_low_stock_div_line="----------------------------Low Stock-------------
 foodprods_out_of_date_div_line="---------------------------Out of Date-----------------------------"
 header_welcome_txt="Welcome to "
 stock_column_headers = ['Name', 'Low Stock Mark', 'Stock', 'Expiry Date']
+out_of_stock="Out of Stock"
 no_prods_text="-- There are no products in listed in your shop: --"
 print_option_error_msg="Only print options available are \n \" \"  (blank) - to print all products,\n \"od\" - to print out of date products \n \"ls\"- to print low stock products"
 
@@ -36,7 +37,7 @@ class Shop:
         self.__stockedProducts=[]
         self.__stockedProducts = list(map(lambda prod: Product(prod[0], prod[1], prod[2]) \
             if len(prod) < 4 else FoodProduct(prod[0], prod[1], prod[2], prod[3], prod[4], prod[5]), sp))
-        #print("You have successfully added data to shop constructor: ")
+        print("You have successfully added data to shop constructor: ")
 
 
 # used isinstance to check for items which are Product and Food Product Objects in the shop prod list. 
@@ -209,10 +210,10 @@ class Shop:
 
 # using * in argument to allow variable length arguments be input in data and avoid errors
 # iterating through item or list of items and checking if it is in valid form for Product or Food Product objects
-# if it is in valid form it appends to existing shop list of products   
+#  if it is in valid form it appends to existing shop list of products   
     def add_product(self, *ap ):
         self.addprod=ap
-        #print(ap)
+        print(ap)
 
 # If item being added is already an Product or FoodProduct object append it to existing list
 # tried to do this way first but modified to lambda expression and left this option in for error handling
@@ -220,6 +221,7 @@ class Shop:
 # Product has 3 and Food Product has 6 
         for item in ap:
             if isinstance(item, (Product, FoodProduct)): 
+                print("isisisisi")
                 self.__stockedProducts.append(item)
             else:
                 # empty list which will contain product to append to existing product list
@@ -227,10 +229,10 @@ class Shop:
                 self.addprod=ap
                 self.addprod = list(map(lambda prod: Product(prod[0], prod[1], prod[2]) \
                     if len(prod) < 4 else FoodProduct(prod[0], prod[1], prod[2], prod[3], prod[4], prod[5]), ap))
-# for loop to iterate through newly added product and append them to shop product list
+# for loop to iterate through 
                 for item in self.addprod:
                     self.__stockedProducts.append(item)
-
+                print("22222")
 
     # def add_product(self, name, description, stock):
     #     added_prod= Product(name, description, stock)
