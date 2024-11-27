@@ -1,0 +1,35 @@
+# from collections import deque
+
+# d = deque('ghi')                 # make a new deque with three items
+
+# for elem in d:                   # iterate over the deque's elements
+
+#     print(elem.lower())
+
+# print(d)
+
+# d.append('j')                    # add a new entry to the right side
+# d.appendleft('f')                # add a new entry to the left side
+
+# d.pop()                          # return and remove the rightmost item
+# d.popleft()                      # return and remove the leftmost item
+# list(reversed(d))                # list the contents of a deque in reverse
+# d.rotate(1)                     # right rotation
+
+import random
+import string
+
+upper_do_work_rand_int=min(random.randint(1, 10), 6)
+print(upper_do_work_rand_int)
+        
+        #use that random number to generate that number if random letters 
+upper_letters = string.ascii_lowercase
+print(upper_letters)
+
+# "clipped" means limiting or constraining the random number to a specific maximum value—the length of the queue. This prevents trying to # process more elements than are available in the queue.
+        # use the random choices method specifying the letters we created and k defines the length of the list
+        # which is our random num between 1 and 10 which we created earlier 
+upper_do_work_rand_letters=random.choices(upper_letters, k=upper_do_work_rand_int)
+    for upper_letter_obj in self.upper_do_work_rand_letters:
+    self.upper.queue_work(source_letter_obj)
+    print(source_letter_obj)     

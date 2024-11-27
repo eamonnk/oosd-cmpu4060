@@ -1,0 +1,23 @@
+import random
+from collections import deque
+
+# roulette=random.choices(['red', 'black', 'green'], [18, 18, 2], k=6)
+# print(roulette)
+
+
+deq_obj=deque([1, 3, 5, 67, 8])
+deq_obj_1=deque([])
+deq_obj_2=deque(['g', 'h', 'i'])
+
+print(deq_obj)
+print(type(deq_obj))
+print(deq_obj_1)
+print(type(deq_obj_1))
+
+print(deq_obj_2)
+print(type(deq_obj_2))
+
+# if isinstance(deq_obj, deque):
+#     print("True")
+# else:
+#     print("False")
