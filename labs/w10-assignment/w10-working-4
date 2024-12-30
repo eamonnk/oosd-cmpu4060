@@ -1,0 +1,8 @@
+single_word_defn_dict={}
+single_word_defn=input("Enter the single word and definition you wish to add to the dictionary: For example 'ice' : ' cold and can skate on it' ")
+print(single_word_defn)
+print(type(single_word_defn))
+key, value = single_word_defn.split(":", 1)
+single_word_defn_dict[key.strip()] = value.strip()
+print(single_word_defn_dict)
+print(type(single_word_defn_dict))

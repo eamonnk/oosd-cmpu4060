@@ -1,0 +1,85 @@
+import tkinter as tk
+from tkinter import ttk
+
+# Data: Average distances of planets from Earth in kilometers
+PLANET_DISTANCES = {
+    "Mercury": 91_691_000,    # km
+    "Venus": 41_400_000,      # km
+    "Earth": 0,               # We're already here!
+    "Mars": 78_340_000,       # km
+    "Jupiter": 628_730_000,   # km
+    "Saturn": 1_275_000_000,  # km
+    "Uranus": 2_723_950_000,  # km
+    "Neptune": 4_351_400_000, # km
+    "Pluto": 5_905_000_000    # km
+}
+
+# Data: Speeds of transport modes in km/h
+TRANSPORT_SPEEDS = {
+    "Car (100 km/h)": 100,              # km/h
+    "Airplane (900 km/h)": 900,         # km/h
+    "Rocket (40,000 km/h)": 40_000,     # km/h
+    "Light Speed (300,000 km/s)": 300_000 * 3600  # km/h (converted to km/h)
+}
+
+class TravelTimeCalculator:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Interplanetary Travel Time Calculator")
+        self.root.geometry("500x300")
+
+        # Dropdown for planets
+        ttk.Label(root, text="Select a Planet:").pack(pady=5)
+        self.planet_var = tk.StringVar(value="Select a Planet")
+        self.planet_dropdown = ttk.Combobox(root, textvariable=self.planet_var, values=list(PLANET_DISTANCES.keys()))
+        self.planet_dropdown.pack(pady=5)
+
+        # Dropdown for transport modes
+        ttk.Label(root, text="Select Means of Transport:").pack(pady=5)
+        self.transport_var = tk.StringVar(value="Select Transport")
+        self.transport_dropdown = ttk.Combobox(root, textvariable=self.transport_var, values=list(TRANSPORT_SPEEDS.keys()))
+        self.transport_dropdown.pack(pady=5)
+
+        # Calculate button
+        self.calculate_button = ttk.Button(root, text="Calculate Travel Time", command=self.calculate_time)
+        self.calculate_button.pack(pady=10)
+
+        # Output label
+        self.result_label = ttk.Label(root, text="", wraplength=400, justify="center")
+        self.result_label.pack(pady=10)
+
+    def calculate_time(self):
+        # Get selected planet and transport mode
+        planet = self.planet_var.get()
+        transport = self.transport_var.get()
+
+        # Validate selections
+        if planet not in PLANET_DISTANCES or transport not in TRANSPORT_SPEEDS:
+            self.result_label.config(text="Please select both a valid planet and a transport mode.")
+            return
+
+        # Retrieve data
+        distance = PLANET_DISTANCES[planet]
+        speed = TRANSPORT_SPEEDS[transport]
+
+        # Calculate time in hours
+        time_in_hours = distance / speed
+
+        # Convert time to years, days, and hours
+        years = int(time_in_hours // (24 * 365))
+        time_in_hours %= (24 * 365)
+        days = int(time_in_hours // 24)
+        hours = int(time_in_hours % 24)
+
+        # Display result
+        self.result_label.config(
+            text=(
+                f"Traveling to {planet} using {transport}:\n"
+                f"Time Required: {years} years, {days} days, and {hours} hours."
+            )
+        )
+
+# Main application
+root = tk.Tk()
+app = TravelTimeCalculator(root)
+root.mainloop()

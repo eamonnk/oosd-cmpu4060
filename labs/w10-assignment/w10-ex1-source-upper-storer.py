@@ -1,6 +1,10 @@
-import random
-import string
-from collections import deque
+# '''
+# Week 9 - Lab Assignment - Containers
+# Exercise 1 - 1 of 2 files
+
+# --w10-ex1-source-upper-storer.py--
+# -eamonn kelly
+# '''
 
 class Source:
     # defining a class variable so cna re-use and call across other methods
@@ -138,9 +142,11 @@ mystorer=Storer()
 myupper=Upper(mystorer)
 mysource=Source(myupper)
 
-#calling do_work method in 'mysource' instance, then 'myupper'
-num=1
+#calling do_work method in 'mysource' instance, then 'myupper', then 'mystorer'
+# num is control for while loop, we increment at end of each loop
 
+num=1
+# To specify number of loops modify value in 'while num < 50:' below
 while num < 50:
     print(" ****************************************************************************************")
     print("     ********************************** --- Iteration {} --- ************************".format(num))
@@ -148,9 +154,6 @@ while num < 50:
     mysource.do_work()
     myupper.do_work()
     mystorer.do_work()
-    # myupper.print()
-    # mysource.print()
-    # mystorer.print()
 
     print("---------------------------------------------------------------------------")
     print("--------------------- queue length in each iteration ----------------------")
@@ -167,7 +170,8 @@ print("-------------------------------------------------------------------------
 print("----------- letters of the alphabet not stored in the Storer object--------")
 print("---------------------------------------------------------------------------")
 
-# we'll define two sets and subtract them from each other and see if anything is left. This will be easier than iterating through a list
+# we'll define two sets and subtract them from each other and see if anything is left.
+# This will be easier than iterating through a list
 # if nothing left every letter in alphabet is accounted for and no letters missing
 # if the final set of letters is True it contains letters which are mising
 final_storer_obj=set(mystorer.get_store())
