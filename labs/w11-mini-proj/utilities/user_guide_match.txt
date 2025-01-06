@@ -1,0 +1,39 @@
+*************************
+*			*
+*    Match Analysis	*
+*     User Guide	*
+*			*
+*************************
+
+The following is a User Guide file for Match Analysis application. 
+
+To use the Match Analysis application do the following:
+
+STEP 1:
+In the 'Match Analysis - Data Collection' section:
+1) Select a 'Date' from the list of available drop down options.
+2) Select a 'Month' from the list of available drop down options.
+3) Select a 'Year' from the list of available drop down options.
+4) Select a 'KO Time' from the list of available drop down options.
+5) Enter a home team name into the 'Home Team' text entry box.
+6) Enter an away team name into the 'Away Team' text entry box.
+
+STEP 2:
+In the next section:
+While the match is going on, click on the relevant button to register a specific event when it happens. The buttons available are
+
+1) Shots on Target
+2) Shots off Target
+3) Free Kicks - For
+4) Free kicks - Against
+5) Goals - For
+6) Goals - Against
+
+As you click the buttons the action is recorded and totals displayed on the screen beside the relevant button.
+
+STEP 3:
+When the match is finished or you are finished collecting data click the 'Finish' button. This will result in a new display called "Match Analysis - Finished Results"
+
+This is a display of the data that you have collected. It is read only. when you are finished click the 'Close' button to close the application.
+
+NOTE: To close this User Guide, click the 'X' in the top right hand corner.
