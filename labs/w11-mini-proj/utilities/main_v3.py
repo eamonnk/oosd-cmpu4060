@@ -1,4 +1,4 @@
-from match_analysis_v4 import MatchAnalysis
+from match_analysis_v5 import MatchAnalysis
 from planet_travel_time_v3 import PlanetTravelTime
 from gravity_v1 import Gravity
 import tkinter as tk # used for tk works
@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 def ma_utility_button_click():
-    ma_utility=MatchAnalysis()
+    ma_utility=MatchAnalysis(master=root)
     ma_utility.start_match_analysis_app()
 
 # create main app root window
@@ -33,8 +33,8 @@ match_analysis_button.grid(row=2, column=1, padx=10, pady=5, sticky='e')
 
 
 # root = tk.Tk()
-app1=MatchAnalysis()
-app1.start_match_analysis_app()
+# app1=MatchAnalysis()
+# app1.start_match_analysis_app()
 
 # # root = tk.Tk()
 # app2=PlanetTravelTime()
@@ -43,3 +43,5 @@ app1.start_match_analysis_app()
 # # root = tk.Tk()
 # app3=Gravity()
 # app3.start_gravity_app()
+
+root.mainloop()

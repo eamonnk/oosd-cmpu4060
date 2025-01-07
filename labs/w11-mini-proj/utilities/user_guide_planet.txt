@@ -15,7 +15,7 @@ In the 'Planet Travel Time' pane:
 2) Select mode of travel radio button from the right hand side
 3) Click the 'Calculate' button
 4) The travel time will then be displayed in the bottom section.
-5) You can continue to select planeys and modes of travel as many times as you wish. 
+5) You can continue to select planets and modes of travel as many times as you wish. 
 6) Clicking 'Calculate' after each selection will re-calculate the travel time for each selection.
 7) When you are finished click the 'Close' button to close the application.
 

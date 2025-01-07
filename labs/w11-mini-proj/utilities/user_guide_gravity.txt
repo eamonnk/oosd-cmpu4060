@@ -1,0 +1,29 @@
+*************************
+*			*
+*   Gravitational Pull	*
+*     User Guide	*
+*			*
+*************************
+
+The following is a User Guide file for Gravitational Pull application. 
+
+To use the Gravitational application do the following:
+
+STEP 1:
+In the 'Gravitational Pull' section:
+1) Enter a value for 'Object 1 Name'
+2) Enter a whole number value for object1 'Mass (Kgs)'
+3) Enter a value for 'Object 2 Name'
+4) Enter a whole number value for the distance between the two objects in metres, 'Distance between Objects (mtrs)'
+
+NOTE: The mass and distance values must be whoel numbers, they cannot be zero.
+
+STEP 2:
+In the next section:
+1) Click the 'Calculate' button to calculate the gravitational force between the two objects. the result is displayed in the bottom part of the application window.
+2) You can re-enter different valeus and click 'Calculate' each time tore-calculate if yu wish.
+3) When you are finisehd click the 'Close' button to close the application
+
+
+
+NOTE: To close this User Guide, click the 'X' in the top right hand corner.

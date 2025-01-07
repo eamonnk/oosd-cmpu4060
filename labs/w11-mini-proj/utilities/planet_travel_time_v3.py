@@ -8,7 +8,7 @@ import csv # needed for csv file data which we will use as our data source
 class FileNotExist(Exception):
     pass
 
-class PlanetTravelTime():
+class PlanetTravelTime:
     
     def __init__(self):
     
@@ -172,12 +172,16 @@ class PlanetTravelTime():
         self.speed_dict=dict(zip(speed_headers, speed_last_row))
         print(self.speed_dict)   
         
-        #open distance csv, read its contents and split into two lists 
-        with open(self.csv_distances_file_name_and_path, 'r', newline='') as file:
-            dist_reader=list(csv.reader(file))
-            for row in dist_reader:
-                dist_headers=dist_reader[0]
-                dist_last_row=dist_reader[-1]
+        try:
+            #open distance csv, read its contents and split into two lists 
+            with open(self.csv_distances_file_name_and_path, 'r', newline='') as file:
+                dist_reader=list(csv.reader(file))
+                for row in dist_reader:
+                    dist_headers=dist_reader[0]
+                    dist_last_row=dist_reader[-1]
+
+        except FileNotExist as fne2:
+            print("-->> file not exist exception catch - fne1")
 
         #create distances dictionary by zipping two lists together
         self.distance_dict=dict(zip(dist_headers, dist_last_row))
@@ -215,12 +219,14 @@ class PlanetTravelTime():
         selected_planet=self.chosen_planet.get()
         selected_travel=self.chosen_travel_mode.get()
         
-        # if selected_planet == 'none' or selected_travel=='none'
-        #     print("please select an appropriate value and try again")
-        print(selected_planet)
-        print(selected_travel)
+        if selected_planet == 'none' or selected_travel == 'none':
+            result_time="please select both a planet and travel mode and try again."
+        else:
+            result_time = self.time_dict[selected_travel][selected_planet]
         
-        result_time = self.time_dict[selected_travel][selected_planet]
+        # print(selected_planet)
+        # print(selected_travel)
+        
         print("Travel time via {} from Earth to {} is {} hours :".format(selected_travel, selected_planet, result_time))
         
         result_label=tk.Label(self.planet_frame, text="Travel time via {} from Earth to {} is:".format(selected_travel, selected_planet))

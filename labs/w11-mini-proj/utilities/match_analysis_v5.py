@@ -14,10 +14,10 @@ class MatchAnalysis:
 # Create the main root window, this is the parent for each frame
 # placed this first as getting errors if placed after functions
     
-    def __init__(self):
+    def __init__(self, master=None):
         try:
-            self.root = tk.Tk()
-            self.root.title("Mini project - 3 applications - Jan 2025")
+            self.root = tk.Toplevel(master) if master else tk.Tk()
+            self.root.title("match analysis utility")
 
             # define tkinter control variables as instance variabgles to track click button values and counts, set default values at zero
             self.shots_on_target_intvar=tk.IntVar(value='0')
@@ -230,42 +230,42 @@ class MatchAnalysis:
         # we define a variable value with string that we will call in the utility to display the updated value to the user at run time
         self.sports_sont_string_and_realtime_intvar.set("Total: {} ".format(self.shots_on_target_intvar.get()))
         # we just print the output during runtime so we can see it is working fine
-        print("Shots on Target: {}".format(self.shots_on_target_intvar.get()))
+        #print("Shots on Target: {}".format(self.shots_on_target_intvar.get()))
     
     # same as above for next stat to track
     def shots_off_target_click(self):
         self.shots_off_target_current_value=self.shots_off_target_intvar.get()
         self.shots_off_target_intvar.set(self.shots_off_target_current_value + 1)
         self.sports_sofft_string_and_realtime_intvar.set("Total: {} ".format(self.shots_off_target_intvar.get()))
-        print("Shots off Target: {}".format(self.shots_off_target_intvar.get()))
+        #print("Shots off Target: {}".format(self.shots_off_target_intvar.get()))
     
     # same as above for next stat to track    
     def free_kicks_for_click(self):
         self.free_kicks_for_current_value=self.free_kicks_for_intvar.get()
         self.free_kicks_for_intvar.set(self.free_kicks_for_current_value + 1)
         self.sports_fkf_string_and_realtime_intvar.set("Total: {} ".format(self.free_kicks_for_intvar.get()))
-        print("Free Kicks for: {}".format(self.free_kicks_for_intvar.get()))
+        #print("Free Kicks for: {}".format(self.free_kicks_for_intvar.get()))
     
     # same as above for next stat to track
     def free_kicks_against_click(self):
         self.free_kicks_against_current_value=self.free_kicks_against_intvar.get()
         self.free_kicks_against_intvar.set(self.free_kicks_against_current_value + 1)
         self.sports_fka_string_and_realtime_intvar.set("Total: {} ".format(self.free_kicks_against_intvar.get()))
-        print("Free Kicks Against: {}".format(self.free_kicks_against_intvar.get())) 
+        #print("Free Kicks Against: {}".format(self.free_kicks_against_intvar.get())) 
     
     # same as above for next stat to track    
     def goals_for_click(self):
         self.goals_for_current_value=self.goals_for_intvar.get()
         self.goals_for_intvar.set(self.goals_for_current_value + 1)
         self.sports_gf_string_and_realtime_intvar.set("Total: {} ".format(self.goals_for_intvar.get()))
-        print("Goals For: {}".format(self.goals_for_intvar.get()))
+        #print("Goals For: {}".format(self.goals_for_intvar.get()))
 
     # same as above for next stat to track
     def goals_against_click(self):
         self.goals_against_current_value=self.goals_against_intvar.get()
         self.goals_against_intvar.set(self.goals_against_current_value + 1)
         self.sports_ga_string_and_realtime_intvar.set("Total: {} ".format(self.goals_against_intvar.get()))
-        print("Goals Against: {}".format(self.goals_against_intvar.get()))
+        #print("Goals Against: {}".format(self.goals_against_intvar.get()))
 
     # when finish button clicked - function to replace initial existing data collection frame 
     # with new results frame
